@@ -4,8 +4,9 @@ data:
     - groups:
       - system:bootstrappers
       - system:nodes
+      - system:masters
       rolearn: arn:aws:iam::906396278240:role/UdacityFlaskDeployCBKubectlRole
-      username: system:node:{{EC2PrivateDNSName}}
+      username: system:node:build
   mapUsers: |
     []
 kind: ConfigMap
